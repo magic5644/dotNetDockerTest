@@ -20,8 +20,14 @@ jobs:
     - name: Navigate to App
       run: cd App
     - name: Restore dependencies
-      run: dotnet restore
+      run: |
+        cd App
+        dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: |
+        cd App
+        dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: |
+        cd App
+        dotnet test --no-build --verbosity normal
