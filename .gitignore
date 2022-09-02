@@ -5,3 +5,4 @@
 /.vs
 /App/bin/Debug/net6.0
 /App/obj
+/App/bin/Release/net6.0
